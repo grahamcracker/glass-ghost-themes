@@ -17,9 +17,11 @@
     <div class="gh-site">
         <header id="gh-head" class="gh-head gh-outer">
             <div class="gh-head-inner gh-inner">
-                {{#if @site.description}}
-                    <a class="gh-head-description" href="{{@site.url}}">{{@site.description}}</a>
-                {{/if}}
+                {{!-- {{#if @site.description}}
+                    <a class="gh-head-description" href="https://glass.health">{{@site.description}}</a>
+                {{/if}} --}}
+
+                <a class="gh-head-description" href="https://glass.health">Glass Health</a>
 
                 <div class="gh-head-brand">
                     <a class="gh-head-logo" href="{{@site.url}}">
@@ -36,13 +38,14 @@
                     <button class="gh-burger"></button>
                 </div>
 
-                <nav class="gh-head-menu">
+                <!-- TEMPORARILY remove navigation -->
+                {{!-- <nav class="gh-head-menu">
                     {{navigation}}
-                </nav>
+                </nav> --}}
 
                 <div class="gh-head-actions">
                     <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
-                    <a class="gh-head-btn gh-btn gh-primary-btn" href="https://glass.health">Get Glass Notebook</a>
+                    <a class="gh-head-btn gh-btn gh-primary-btn" href="https://glass.health">Get Started</a>
                 </div>
             </div>
         </header>

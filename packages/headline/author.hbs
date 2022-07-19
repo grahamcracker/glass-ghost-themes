@@ -18,6 +18,12 @@
                     {{#if bio}}
                         <div class="gh-author-bio gh-pagehead-description">{{bio}}</div>
                     {{/if}}
+
+                    {{#if twitter}}
+                    <div class="gh-author-bio gh-pagehead-description">
+                        <a href="https://twitter.com/{{twitter}}" target="_blank">{{twitter}}</a>
+                    </div>
+                    {{/if}}
                 </div>
             </section>
         {{/author}}
